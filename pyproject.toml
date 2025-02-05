@@ -11,7 +11,7 @@ readme = "README.md"
 
 [project.urls]
 Task = "https://ufdatastudio.com/cis6930sp25/assignments/1"
-repository = "https://github.com/<userid>/cis6930sp25-assignment1"
+repository = "https://github.com/cegme/cis6930sp25-sampleproj"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

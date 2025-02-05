@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 black = "*"
 pytest = "*"
+duckdb = "*"
+assignment1 = {file = ".", editable = true}
 
 [dev-packages]
 
