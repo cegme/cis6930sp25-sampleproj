@@ -13,7 +13,10 @@ def main(url):
     print(f"{url=}")
 
 def querysomething(url):
-    return duckdb.sql(f"SELECT * FROM read_json_auto('{url}')")
+    conn = duckdb.connect(config = {"allow_unsigned_extensions": "true"})
+    return conn.sql(f"SELECT * FROM '{url}';")
+    #return conn.sql(f'SELECT * FROM read_json_auto("{url}")')
+
 
 def getjson(url):
     """Retreuves URL from the location.
