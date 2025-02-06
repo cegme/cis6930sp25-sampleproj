@@ -7,8 +7,8 @@ name = "pypi"
 black = "*"
 pytest = "*"
 assignment1 = {file = ".", editable = true}
-ipython = "*"
 duckdb = "*"
+ipython = "*"
 
 [dev-packages]
 

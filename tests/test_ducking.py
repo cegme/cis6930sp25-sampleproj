@@ -23,5 +23,4 @@ def test_isdatajson():
 
 def test_queryworks(tweets_url):
     result = main.querysomething(tweets_url)
-    print(result)
-    assert result is not None
+    assert result is not None and result > 0

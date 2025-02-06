@@ -12,10 +12,9 @@ import duckdb
 def main(url):
     print(f"{url=}")
 
-def querysomething(url):
-    conn = duckdb.connect(config = {"allow_unsigned_extensions": "true"})
-    return conn.sql(f"SELECT * FROM '{url}';")
-    #return conn.sql(f'SELECT * FROM read_json_auto("{url}")')
+def querysomething_length(url):
+    conn = duckdb.connect()
+    return len(conn.sql(f"SELECT * FROM '{url}';"))
 
 
 def getjson(url):
